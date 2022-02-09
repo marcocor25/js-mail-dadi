@@ -48,20 +48,38 @@ const diceButton = document.getElementById('dice-button');
 console.log(diceButton);
 
 // COLLEGO I CONTENITORI PER I RISULTATI DEI DAI
-const yourResult = document.getElementById('your-result');
-console.log(yourResult);
-const computerResult = document.getElementById('computer-result');
+const userResult = document.getElementById('user');
+console.log(userResult);
+const computerResult = document.getElementById('computer');
 console.log(computerResult);
+const finalResult = document.getElementById('result');
+console.log(finalResult);
 
 // GENERATORE NUMERO PER UTENTE
-const userNumber = Math.floor(Math.random() * (6 - 1 + 1) +1);
-console.log(userNumber);
+const userGenerator = Math.floor(Math.random() * (6 - 1 + 1) +1);
+console.log(userGenerator);
 
 // GENERATORE NUMERO PER COMPUTER
-const computerNumber = Math.floor(Math.random() * (6 - 1 + 1) +1);
-console.log(computerNumber);
+const computerGenerator = Math.floor(Math.random() * (6 - 1 + 1) +1);
+console.log(computerGenerator);
+
+// VARIABILI RISULTATI
+const youLost = ('Hai perso!');
+const youWon = ('Hai vinto!');
+const pair = ('Pareggio...');
 
 diceButton.addEventListener('click', function() {
-    yourResult.append(userNumber);
-    computerResult.append(computerNumber);
+    userResult.append(userGenerator);
+    computerResult.append(computerGenerator);
+    
+    if (userGenerator > computerGenerator) {
+        finalResult.append(youWon);
+        finalResult.style.color = "lightgreen";
+    } else if (userGenerator < computerGenerator) {
+        finalResult.append(youLost);
+        finalResult.style.color = "red";
+    } else if (userGenerator == computerGenerator) {
+        finalResult.append(pair);
+        finalResult.style.color = "darkblue";
+    }
 })

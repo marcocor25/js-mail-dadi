@@ -25,6 +25,10 @@ body {
     background: blueviolet;
 }
 
+#user, #computer, #result {
+    min-height: 30px;
+}
+
 /* VIEWPORT */
 
 @media all and (max-width: 768px) {
