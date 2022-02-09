@@ -11,12 +11,18 @@ body {
 }
 
 .ms__border {
-    border-right: 2px solid white;
+    border-right: 3px solid white;
 }
 
 .ms__title {
-    color: white;
+    font-weight: 900;
+    color: gold;
     filter: drop-shadow(3px 3px black);
+}
+
+#email-button {
+    color: white;
+    background: blueviolet;
 }
 
 /* VIEWPORT */
@@ -24,6 +30,6 @@ body {
 @media all and (max-width: 768px) {
     .ms__border {
         border-right: 0;
-        border-bottom: 2px solid white;
+        border-bottom: 3px solid white;
     }
 }
