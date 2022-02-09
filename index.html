@@ -13,31 +13,30 @@
 
     <!-- MAIN SECTION -->
 
-    <section class="main__section text-white">
-        <div class="overlay"></div>
-        <div class="container p-5 z__index">
+    <section class="d-flex align-items-center main__section">
+        <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 text-center py-4 ms__col">
-                    <h2 class="text-uppercase">Casella e-mail</h2>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-evenly ms__col ms__border">
+                    <h2 class="text-uppercase ms__title">Casella e-mail</h2>
                     <div class="row">
                         <div class="col-12">
-                            
+                            <label class="py-2" for="email- box">inserisci la tua e-mail per effettuare il log-in:</label>
+                            <div class="d-flex justify-content-center">
+                                <input class="rounded" type="email" name="email" id="email-box" placeholder="example@email.com">
+                                <button class="rounded mx-2">Entra</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 text-center py-4">
-                    <h2 class="text-uppercase">Gioco dei dadi</h2>
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
-                    </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-evenly ms__col">
+                    <h2 class="text-uppercase ms__title">Gioco dei dadi</h2>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SCRIPT -->
+
     <script src="app.js"></script>
 
 </body>
