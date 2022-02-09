@@ -20,7 +20,7 @@ body {
     filter: drop-shadow(3px 3px black);
 }
 
-#email-button {
+#email-button, #dice-button {
     color: white;
     background: blueviolet;
 }

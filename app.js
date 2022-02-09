@@ -1,3 +1,5 @@
+// MAIL CHECK
+
 // COLLEGO IL BOTTONE PER PRENDERE L'EMAIL DELL'UTENTE
 const getEmail = document.getElementById('email-button');
 console.log(getEmail);
@@ -37,4 +39,29 @@ getEmail.addEventListener('click', function() {
         alert('Email corretta, puoi entrare!');
         console.log('Email corretta, puoi entrare!');
     }
+})
+
+// DICE GAME
+
+// COLLEGO IL BOTTONE PER LANCIARE IL DADO
+const diceButton = document.getElementById('dice-button');
+console.log(diceButton);
+
+// COLLEGO I CONTENITORI PER I RISULTATI DEI DAI
+const yourResult = document.getElementById('your-result');
+console.log(yourResult);
+const computerResult = document.getElementById('computer-result');
+console.log(computerResult);
+
+// GENERATORE NUMERO PER UTENTE
+const userNumber = Math.floor(Math.random() * (6 - 1 + 1) +1);
+console.log(userNumber);
+
+// GENERATORE NUMERO PER COMPUTER
+const computerNumber = Math.floor(Math.random() * (6 - 1 + 1) +1);
+console.log(computerNumber);
+
+diceButton.addEventListener('click', function() {
+    yourResult.append(userNumber);
+    computerResult.append(computerNumber);
 })
